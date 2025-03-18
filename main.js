@@ -304,7 +304,6 @@ async function loginDoing() {
     }
 }
 function loggingout() {
-    document.getElementById('ProfilePage').style.display = 'none';
     makingsureOUT.style.display = 'flex';
     windowbackcover.style.display = 'flex'
     windowbackcover.style.opacity = '.9'
