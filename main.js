@@ -11,7 +11,7 @@ let Message = document.getElementById('Message');
 let Showsinglepost = document.getElementById('Showsinglepost');
 
 async function GetPosts() {
-    const app = await fetch('https://tarmeezacademy.com/api/v1/posts');
+    const app = await axios.get('https://tarmeezacademy.com/api/v1/posts');
     const result = await app;
     const all = result.data;
     postssback.innerHTML = '';
